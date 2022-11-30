@@ -1,6 +1,6 @@
 name: dbt Test
 
-on: [push]
+on: [pull]
 
 jobs:
   dbt-runner:
