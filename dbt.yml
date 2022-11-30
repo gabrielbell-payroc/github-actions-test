@@ -1,6 +1,12 @@
-name: dbt Commands
+name: dbt Workflow
 
-on: [push]
+on:
+  repository_dispatch: 
+  push:
+  pull_request:
+    types: [closed, assigned, opened, reopened]
+  # schedule:
+  #  - cron: "0/5 * * * *"
 
 jobs:
   dbt-runner:
