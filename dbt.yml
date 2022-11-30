@@ -1,0 +1,10 @@
+name: dbt Test
+
+on: push
+
+jobs:
+  dbt-runner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dbt
+        run: pip install dbt-snowflake
