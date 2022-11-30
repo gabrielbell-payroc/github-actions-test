@@ -1,6 +1,7 @@
 name: dbt Workflow
 
 on: [push]
+
 jobs:
   dbt-runner:
     runs-on: ubuntu-latest
