@@ -1,9 +1,9 @@
-name: dbt Workflow
+name: dbt Commands
 
-on: [push]
+on: [pull]
 
 jobs:
-  dbt-runner:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
