@@ -1,16 +1,12 @@
 name: dbt Workflow
 
-on:
-  repository_dispatch: 
-  push:
-  pull_request:
-    types: [closed, assigned, opened, reopened]
-  # schedule:
-  #  - cron: "0/5 * * * *"
-
+on: [push]
 jobs:
   dbt-runner:
     runs-on: ubuntu-latest
     steps:
+      - name: echo a string
+        run: echo "Hello World"
       - name: install dbt
-        run: pip install dbt-snowflake
+        run: |
+          pip install dbt-snowflake
