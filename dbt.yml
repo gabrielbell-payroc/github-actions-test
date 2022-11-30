@@ -1,7 +1,6 @@
-name: dbt Test
+name: Shell Commands
 
-on:
-  push:
+on: [push]
 
 jobs:
   dbt-runner:
